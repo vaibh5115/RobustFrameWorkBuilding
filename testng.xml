@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="tests" thread-count="3"> <!-- to execute test parallelly then we need to add parallel="tests" at suite level-->
+	
+	<!-- here we provided listener info to our xml file means where the listener file is located. -->
+	<listeners> 
+		<listener class-name="FrameworkBuilding.E2E_Project.Listeners"></listener>
+	</listeners>
+	
+  	  <test name="HomePageTestCases" thread-count="5">
+    	<classes>
+      		<class name="FrameworkBuilding.E2E_Project.HomePageTestCases"/>
+      	</classes>
+      </test>
+  
+      
+       <test name="LoginPageTestCases" thread-count="5">
+    	<classes>
+      		<class name="FrameworkBuilding.E2E_Project.LoginPageTestCases"/>
+    	</classes>
+  	  </test> <!-- Test -->
+</suite> <!-- Suite -->
