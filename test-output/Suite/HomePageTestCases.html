@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>HomePageTestCases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 31 19:47:19 IST 2021</td>
+<td>Started on:</td><td>Sat Jun 05 19:47:53 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59023 ms)</td>
+<tr><td>Total time:</td><td>97 seconds (97901 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,82 +75,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='FrameworkBuilding.E2E_Project.HomePageTestCases.checkLoginBtnWorking()'><b>checkLoginBtnWorking</b><br>Test class: FrameworkBuilding.E2E_Project.HomePageTestCases</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rahulshettyacademy.com/sign_in/&quot;&gt;...&lt;/a&gt; is not clickable at point (1324, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=91.0.4472.77)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-AN1HL9O&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\$hnavi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59334}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 787a58997a1c3ca7c3e908b51611cf98
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at pageObjects.HomePageObjects.navigateToLoginPage(HomePageObjects.java:49)
-	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkLoginBtnWorking(HomePageTestCases.java:80)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2130048271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2130048271'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rahulshettyacademy.com/sign_in/&quot;&gt;...&lt;/a&gt; is not clickable at point (1324, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=91.0.4472.77)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-AN1HL9O&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\$hnavi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59334}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 787a58997a1c3ca7c3e908b51611cf98
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at pageObjects.HomePageObjects.navigateToLoginPage(HomePageObjects.java:49)
-	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkLoginBtnWorking(HomePageTestCases.java:80)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>1</td>
-<td>FrameworkBuilding.E2E_Project.HomePageTestCases@28975c28</td></tr>
-<tr>
 <td title='FrameworkBuilding.E2E_Project.HomePageTestCases.checkTitleOfPageIsCorrect()'><b>checkTitleOfPageIsCorrect</b><br>Test class: FrameworkBuilding.E2E_Project.HomePageTestCases</td>
 <td><div><pre>java.lang.AssertionError: expected [FEATURED Courses] but found [FEATURED COURSES]
 	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkTitleOfPageIsCorrect(HomePageTestCases.java:50)
@@ -158,8 +82,8 @@ Session ID: 787a58997a1c3ca7c3e908b51611cf98
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769701489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1769701489'><pre>java.lang.AssertionError: expected [FEATURED Courses] but found [FEATURED COURSES]
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1725855096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725855096'><pre>java.lang.AssertionError: expected [FEATURED Courses] but found [FEATURED COURSES]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
@@ -188,8 +112,8 @@ Session ID: 787a58997a1c3ca7c3e908b51611cf98
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>28</td>
-<td>FrameworkBuilding.E2E_Project.HomePageTestCases@28975c28</td></tr>
+<td>39</td>
+<td>FrameworkBuilding.E2E_Project.HomePageTestCases@5552768b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -201,13 +125,18 @@ Session ID: 787a58997a1c3ca7c3e908b51611cf98
 <tr>
 <td title='FrameworkBuilding.E2E_Project.HomePageTestCases.checkHeaderTitleIsCorrect()'><b>checkHeaderTitleIsCorrect</b><br>Test class: FrameworkBuilding.E2E_Project.HomePageTestCases</td>
 <td></td>
-<td>0</td>
-<td>FrameworkBuilding.E2E_Project.HomePageTestCases@28975c28</td></tr>
+<td>7</td>
+<td>FrameworkBuilding.E2E_Project.HomePageTestCases@5552768b</td></tr>
+<tr>
+<td title='FrameworkBuilding.E2E_Project.HomePageTestCases.checkLoginBtnWorking()'><b>checkLoginBtnWorking</b><br>Test class: FrameworkBuilding.E2E_Project.HomePageTestCases</td>
+<td></td>
+<td>2</td>
+<td>FrameworkBuilding.E2E_Project.HomePageTestCases@5552768b</td></tr>
 <tr>
 <td title='FrameworkBuilding.E2E_Project.HomePageTestCases.checkNavBarAvailable()'><b>checkNavBarAvailable</b><br>Test class: FrameworkBuilding.E2E_Project.HomePageTestCases</td>
 <td></td>
 <td>0</td>
-<td>FrameworkBuilding.E2E_Project.HomePageTestCases@28975c28</td></tr>
+<td>FrameworkBuilding.E2E_Project.HomePageTestCases@5552768b</td></tr>
 </table><p>
 </body>
 </html>

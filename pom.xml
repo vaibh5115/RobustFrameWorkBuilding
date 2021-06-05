@@ -152,15 +152,17 @@
         <configuration>
           
           <!--  if execute with TestNG -->
-          <!--  
+            
           <suiteXmlFiles> 
             <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles> -->
+          </suiteXmlFiles>
           
           <!-- if execute with testngCucumber -->
+          <!--
           <suiteXmlFiles>
             <suiteXmlFile>testngCucumber.xml</suiteXmlFile>
           </suiteXmlFiles>
+          -->
           
         </configuration>
       </plugin>  

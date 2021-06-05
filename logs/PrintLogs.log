@@ -764,3 +764,27 @@
 19:48:24.694 [TestNG] INFO  resources1.base - forgot password email id entered successfully
 19:48:25.064 [TestNG] INFO  resources1.base - clicked on Send Me Instruction button successfully
 19:48:25.509 [TestNG] INFO  resources1.base - browser closed successfully
+19:48:31.184 [TestNG] INFO  resources1.base - WebDriver is initialized and browser is opened
+19:48:31.184 [TestNG] INFO  resources1.base - WebDriver is initialized
+19:49:08.152 [TestNG] INFO  resources1.base - hited qaclick acadamy url successfully
+19:49:08.152 [TestNG] INFO  resources1.base - hited qaclick acadamy url successfully
+19:49:19.649 [TestNG] INFO  resources1.base - clicked on home page login button successfully
+19:49:21.363 [TestNG] INFO  resources1.base - Header title Name is verified successfully and it is as per expectaion
+19:49:22.228 [TestNG] INFO  resources1.base - Navigation Bar is available on home page
+19:49:24.043 [TestNG] INFO  resources1.base - User name: restricteduser@qaclick.com entered successfully
+19:49:24.226 [TestNG] INFO  resources1.base - password: pass@123 entered successfully
+19:49:24.678 [TestNG] INFO  resources1.base - clicked on Login page login button successfully
+19:49:24.878 [TestNG] INFO  resources1.base - clicked on home page login in button successfully
+19:49:24.982 [TestNG] INFO  resources1.base - clicked on login page-> forgot password link successfully
+19:49:25.117 [TestNG] INFO  resources1.base - forgot password email id entered successfully
+19:49:25.319 [TestNG] INFO  resources1.base - clicked on Send Me Instruction button successfully
+19:49:30.945 [TestNG] INFO  resources1.base - hited qaclick acadamy url successfully
+19:49:31.426 [TestNG] INFO  resources1.base - browser closed successfully
+19:49:32.246 [TestNG] INFO  resources1.base - clicked on home page login button successfully
+19:49:32.418 [TestNG] INFO  resources1.base - User name: unrestricteduser@qaclick.com entered successfully
+19:49:32.567 [TestNG] INFO  resources1.base - password: unrestricted entered successfully
+19:49:33.133 [TestNG] INFO  resources1.base - clicked on Login page login button successfully
+19:49:35.765 [TestNG] INFO  resources1.base - clicked on login page-> forgot password link successfully
+19:49:35.882 [TestNG] INFO  resources1.base - forgot password email id entered successfully
+19:49:36.051 [TestNG] INFO  resources1.base - clicked on Send Me Instruction button successfully
+19:49:38.397 [TestNG] INFO  resources1.base - browser closed successfully
