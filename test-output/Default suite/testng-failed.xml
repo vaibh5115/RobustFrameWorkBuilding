@@ -11,8 +11,10 @@
       <class name="FrameworkBuilding.E2E_Project.HomePageTestCases">
         <methods>
           <include name="checkTitleOfPageIsCorrect"/>
-          <include name="closeBrowser"/>
+          <include name="checkLoginBtnWorking"/>
+          <include name="checkNavBarAvailable"/>
           <include name="openBrowser"/>
+          <include name="checkHeaderTitleIsCorrect"/>
         </methods>
       </class> <!-- FrameworkBuilding.E2E_Project.HomePageTestCases -->
     </classes>

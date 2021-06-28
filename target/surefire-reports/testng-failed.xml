@@ -4,9 +4,31 @@
   <listeners>
     <listener class-name="FrameworkBuilding.E2E_Project.Listeners"/>
   </listeners>
-  <test name="Login page test cases">
+  <test thread-count="5" name="HomePageTestCases">
     <classes>
-      <class name="cucumberOptions.TestRunner"/>
+      <class name="FrameworkBuilding.E2E_Project.HomePageTestCases"/>
     </classes>
-  </test> <!-- Login page test cases -->
+  </test> <!-- HomePageTestCases -->
+  <test thread-count="5" name="LoginPageTestCases">
+    <classes>
+      <class name="FrameworkBuilding.E2E_Project.LoginPageTestCases"/>
+    </classes>
+  </test> <!-- LoginPageTestCases -->
+  <test name="HomePageTestCases(failed)" parallel="tests">
+    <classes>
+      <class name="FrameworkBuilding.E2E_Project.HomePageTestCases">
+        <methods>
+          <include name="checkTitleOfPageIsCorrect"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- FrameworkBuilding.E2E_Project.HomePageTestCases -->
+      <class name="FrameworkBuilding.E2E_Project.LoginPageTestCases">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- FrameworkBuilding.E2E_Project.LoginPageTestCases -->
+    </classes>
+  </test> <!-- HomePageTestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

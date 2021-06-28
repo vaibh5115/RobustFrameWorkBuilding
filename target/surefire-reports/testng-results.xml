@@ -1,35 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="65245" started-at="2021-06-01T12:46:08Z" finished-at="2021-06-01T12:47:13Z">
+  <suite name="Suite" duration-ms="41429" started-at="2021-06-05T15:03:53Z" finished-at="2021-06-05T15:04:34Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345965f2]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Login page test cases" duration-ms="65245" started-at="2021-06-01T12:46:08Z" finished-at="2021-06-01T12:47:13Z">
-      <class name="cucumberOptions.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@345965f2]" name="setUpClass" is-config="true" duration-ms="421" started-at="2021-06-01T18:16:08Z" finished-at="2021-06-01T18:16:08Z">
+    <test name="HomePageTestCases" duration-ms="33056" started-at="2021-06-05T15:03:53Z" finished-at="2021-06-05T15:04:26Z">
+      <class name="FrameworkBuilding.E2E_Project.HomePageTestCases">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@3af9c5b7]" name="openBrowser" is-config="true" duration-ms="5559" started-at="2021-06-05T20:33:53Z" finished-at="2021-06-05T20:33:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@345965f2]" name="feature" duration-ms="64221" started-at="2021-06-01T18:16:09Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-06-01T18:17:13Z">
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="checkTitleOfPageIsCorrect()[pri:1, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@3af9c5b7]" name="checkTitleOfPageIsCorrect" duration-ms="17866" started-at="2021-06-05T20:33:58Z" finished-at="2021-06-05T20:34:16Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED Courses] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED Courses] but found [FEATURED COURSES]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkTitleOfPageIsCorrect(HomePageTestCases.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleOfPageIsCorrect -->
+        <test-method status="PASS" signature="checkHeaderTitleIsCorrect()[pri:2, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@3af9c5b7]" name="checkHeaderTitleIsCorrect" duration-ms="106" started-at="2021-06-05T20:34:19Z" finished-at="2021-06-05T20:34:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHeaderTitleIsCorrect -->
+        <test-method status="PASS" signature="checkNavBarAvailable()[pri:3, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@3af9c5b7]" name="checkNavBarAvailable" duration-ms="437" started-at="2021-06-05T20:34:19Z" finished-at="2021-06-05T20:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavBarAvailable -->
+        <test-method status="PASS" signature="checkLoginBtnWorking()[pri:4, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@3af9c5b7]" name="checkLoginBtnWorking" duration-ms="2382" started-at="2021-06-05T20:34:20Z" finished-at="2021-06-05T20:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginBtnWorking -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@3af9c5b7]" name="closeBrowser" is-config="true" duration-ms="3627" started-at="2021-06-05T20:34:22Z" finished-at="2021-06-05T20:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- FrameworkBuilding.E2E_Project.HomePageTestCases -->
+    </test> <!-- HomePageTestCases -->
+    <test name="LoginPageTestCases" duration-ms="41428" started-at="2021-06-05T15:03:53Z" finished-at="2021-06-05T15:04:34Z">
+      <class name="FrameworkBuilding.E2E_Project.LoginPageTestCases">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@7a675056]" name="openBrowser" is-config="true" duration-ms="5559" started-at="2021-06-05T20:33:53Z" finished-at="2021-06-05T20:33:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="LoginPageUnautorizedAccessTest(java.lang.String, java.lang.String)[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@7a675056]" name="LoginPageUnautorizedAccessTest" duration-ms="30644" started-at="2021-06-05T20:33:58Z" data-provider="getData" finished-at="2021-06-05T20:34:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Login Page]]>
+                <![CDATA[restricteduser@qaclick.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@345965f2]" name="tearDownClass" is-config="true" duration-ms="150" started-at="2021-06-01T18:17:13Z" finished-at="2021-06-01T18:17:13Z">
+        </test-method> <!-- LoginPageUnautorizedAccessTest -->
+        <test-method status="PASS" signature="LoginPageUnautorizedAccessTest(java.lang.String, java.lang.String)[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@7a675056]" name="LoginPageUnautorizedAccessTest" duration-ms="5166" started-at="2021-06-05T20:34:29Z" data-provider="getData" finished-at="2021-06-05T20:34:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[unrestricteduser@qaclick.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[unrestricted]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumberOptions.TestRunner -->
-    </test> <!-- Login page test cases -->
+        </test-method> <!-- LoginPageUnautorizedAccessTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@7a675056]" name="closeBrowser" is-config="true" duration-ms="42" started-at="2021-06-05T20:34:34Z" finished-at="2021-06-05T20:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- FrameworkBuilding.E2E_Project.LoginPageTestCases -->
+    </test> <!-- LoginPageTestCases -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -27,9 +27,9 @@ public class base
 		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources1\\data.properties"); // removed hard coded paths so that code should be run in any machine.
 		prop.load(fis); //load specified file in prop object
 		
-		//String browserName=prop.getProperty("browser"); //used this when need to execute as testNG suite: normal execution by getting browser value from .properties file.
+		String browserName=prop.getProperty("browser"); //used this when need to execute as testNG suite: normal execution by getting browser value from .properties file.
 		
-		String browserName=System.getProperty("browser"); //make maven to read browser parameters by making it as Systems file
+		//String browserName=System.getProperty("browser"); //make maven to read browser parameters by making it as Systems file
 		// now from cmd execute below command to parameterize build with different browser.
 		//mvn test -Dbrowser=chrome 
 		

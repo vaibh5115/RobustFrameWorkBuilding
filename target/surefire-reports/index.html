@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,17 +49,17 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\Study\eclipse_workspace\Frameworks-Practice\E2E_Project\testngCucumber.xml</span>
+                    <span>E:\Study\eclipse_workspace\Frameworks-Practice\E2E_Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="FrameworkBuilding.E2E_Project.HomePageTestCases" hash-for-method="checkTitleOfPageIsCorrect">checkTitleOfPageIsCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cucumberOptions.TestRunner" hash-for-method="feature(Login Page)">feature(Login Page)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="FrameworkBuilding.E2E_Project.LoginPageTestCases" hash-for-method="LoginPageUnautorizedAccessTest(unrestricteduser@qaclick.com, unrestricted)">LoginPageUnautorizedAccessTest(unrestricteduser@qaclick.com, unrestricted)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="FrameworkBuilding.E2E_Project.LoginPageTestCases" hash-for-method="LoginPageUnautorizedAccessTest(restricteduser@qaclick.com, pass@123)">LoginPageUnautorizedAccessTest(restricteduser@qaclick.com, pass@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="FrameworkBuilding.E2E_Project.HomePageTestCases" hash-for-method="checkHeaderTitleIsCorrect">checkHeaderTitleIsCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="FrameworkBuilding.E2E_Project.HomePageTestCases" hash-for-method="checkLoginBtnWorking">checkLoginBtnWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="FrameworkBuilding.E2E_Project.HomePageTestCases" hash-for-method="checkNavBarAvailable">checkNavBarAvailable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -117,20 +151,78 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">cucumberOptions.TestRunner</span>
+              <img src="failed.png"/>
+              <span class="class-name">FrameworkBuilding.E2E_Project.HomePageTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Login Page)">
-                  </a> <!-- feature(Login Page) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Login Page)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
+                  <a name="checkTitleOfPageIsCorrect">
+                  </a> <!-- checkTitleOfPageIsCorrect -->
+                  <span class="method-name">checkTitleOfPageIsCorrect</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [FEATURED Courses] but found [FEATURED COURSES]
+	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkTitleOfPageIsCorrect(HomePageTestCases.java:50)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">FrameworkBuilding.E2E_Project.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkHeaderTitleIsCorrect">
+                  </a> <!-- checkHeaderTitleIsCorrect -->
+                  <span class="method-name">checkHeaderTitleIsCorrect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginBtnWorking">
+                  </a> <!-- checkLoginBtnWorking -->
+                  <span class="method-name">checkLoginBtnWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkNavBarAvailable">
+                  </a> <!-- checkNavBarAvailable -->
+                  <span class="method-name">checkNavBarAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">FrameworkBuilding.E2E_Project.LoginPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPageUnautorizedAccessTest(unrestricteduser@qaclick.com, unrestricted)">
+                  </a> <!-- LoginPageUnautorizedAccessTest(unrestricteduser@qaclick.com, unrestricted) -->
+                  <span class="method-name">LoginPageUnautorizedAccessTest</span>
+                  <span class="parameters">(unrestricteduser@qaclick.com, unrestricted)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPageUnautorizedAccessTest(restricteduser@qaclick.com, pass@123)">
+                  </a> <!-- LoginPageUnautorizedAccessTest(restricteduser@qaclick.com, pass@123) -->
+                  <span class="method-name">LoginPageUnautorizedAccessTest</span>
+                  <span class="parameters">(restricteduser@qaclick.com, pass@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +230,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Study\eclipse_workspace\Frameworks-Practice\E2E_Project\testngCucumber.xml</span>
+            <span class="header-content">E:\Study\eclipse_workspace\Frameworks-Practice\E2E_Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +240,33 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;FrameworkBuilding.E2E_Project.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Login page test cases&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HomePageTestCases&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cucumberOptions.TestRunner&quot;/&gt;
+      &lt;class name=&quot;FrameworkBuilding.E2E_Project.HomePageTestCases&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login page test cases --&gt;
+  &lt;/test&gt; &lt;!-- HomePageTestCases --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginPageTestCases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;FrameworkBuilding.E2E_Project.LoginPageTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginPageTestCases --&gt;
+  &lt;test name=&quot;HomePageTestCases(failed)&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;FrameworkBuilding.E2E_Project.HomePageTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkTitleOfPageIsCorrect&quot;/&gt;
+          &lt;include name=&quot;closeBrowser&quot;/&gt;
+          &lt;include name=&quot;openBrowser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- FrameworkBuilding.E2E_Project.HomePageTestCases --&gt;
+      &lt;class name=&quot;FrameworkBuilding.E2E_Project.LoginPageTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;closeBrowser&quot;/&gt;
+          &lt;include name=&quot;openBrowser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- FrameworkBuilding.E2E_Project.LoginPageTestCases --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomePageTestCases(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +278,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login page test cases (1 class)</span>
+                <span class="test-name">HomePageTestCases (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginPageTestCases (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">HomePageTestCases(failed) (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,14 +294,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">cucumber</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">feature</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -198,16 +310,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'cucumberOptions.TestRunner')
-data.setCell(0, 3, 64221);
+data.setCell(0, 1, 'LoginPageUnautorizedAccessTest')
+data.setCell(0, 2, 'FrameworkBuilding.E2E_Project.LoginPageTestCases')
+data.setCell(0, 3, 30644);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkTitleOfPageIsCorrect')
+data.setCell(1, 2, 'FrameworkBuilding.E2E_Project.HomePageTestCases')
+data.setCell(1, 3, 17866);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginPageUnautorizedAccessTest')
+data.setCell(2, 2, 'FrameworkBuilding.E2E_Project.LoginPageTestCases')
+data.setCell(2, 3, 5166);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkLoginBtnWorking')
+data.setCell(3, 2, 'FrameworkBuilding.E2E_Project.HomePageTestCases')
+data.setCell(3, 3, 2382);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkNavBarAvailable')
+data.setCell(4, 2, 'FrameworkBuilding.E2E_Project.HomePageTestCases')
+data.setCell(4, 3, 437);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkHeaderTitleIsCorrect')
+data.setCell(5, 2, 'FrameworkBuilding.E2E_Project.HomePageTestCases')
+data.setCell(5, 3, 106);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -233,19 +365,61 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">cucumberOptions.TestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
+              <div class="chronological-class-name">FrameworkBuilding.E2E_Project.LoginPageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">FrameworkBuilding.E2E_Project.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">feature(Login Page)</span>
-                <span class="method-start">570 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTitleOfPageIsCorrect</span>
+                <span class="method-start">5572 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">65083 ms</span>
-              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">FrameworkBuilding.E2E_Project.LoginPageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginPageUnautorizedAccessTest(restricteduser@qaclick.com, pass@123)</span>
+                <span class="method-start">5574 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">FrameworkBuilding.E2E_Project.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkHeaderTitleIsCorrect</span>
+                <span class="method-start">26495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkNavBarAvailable</span>
+                <span class="method-start">26603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLoginBtnWorking</span>
+                <span class="method-start">27041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">29427 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">FrameworkBuilding.E2E_Project.LoginPageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginPageUnautorizedAccessTest(unrestricteduser@qaclick.com, unrestricted)</span>
+                <span class="method-start">36219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">41385 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
