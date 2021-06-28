@@ -1,0 +1,7 @@
+pageObjects\ForgotPassPageObjects.class
+resources1\base.class
+pageObjects\HomePageObjects.class
+resources1\ExtentReportsConfig.class
+FrameworkBuilding\E2E_Project\Listeners.class
+pageObjects\LoginPageObjects.class
+FrameworkBuilding\E2E_Project\App.class

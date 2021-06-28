@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47080" started-at="2021-06-28T07:41:24Z" finished-at="2021-06-28T07:42:11Z">
+  <suite name="Suite" duration-ms="33496" started-at="2021-06-28T08:48:36Z" finished-at="2021-06-28T08:49:09Z">
     <groups>
     </groups>
-    <test name="HomePageTestCases" duration-ms="43837" started-at="2021-06-28T07:41:24Z" finished-at="2021-06-28T07:42:08Z">
+    <test name="HomePageTestCases" duration-ms="23727" started-at="2021-06-28T08:48:36Z" finished-at="2021-06-28T08:49:00Z">
       <class name="FrameworkBuilding.E2E_Project.HomePageTestCases">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@68e965f5]" name="openBrowser" is-config="true" duration-ms="6472" started-at="2021-06-28T13:11:24Z" finished-at="2021-06-28T13:11:30Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@7d20d0b]" name="openBrowser" is-config="true" duration-ms="5696" started-at="2021-06-28T14:18:36Z" finished-at="2021-06-28T14:18:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="checkTitleOfPageIsCorrect()[pri:1, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@68e965f5]" name="checkTitleOfPageIsCorrect" duration-ms="30021" started-at="2021-06-28T13:11:30Z" finished-at="2021-06-28T13:12:00Z">
+        <test-method status="FAIL" signature="checkTitleOfPageIsCorrect()[pri:1, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@7d20d0b]" name="checkTitleOfPageIsCorrect" duration-ms="13505" started-at="2021-06-28T14:18:42Z" finished-at="2021-06-28T14:18:55Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [FEATURED Courses] but found [FEATURED COURSES]]]>
@@ -24,7 +24,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkTitleOfPageIsCorrect(HomePageTestCases.java:50)
+	at FrameworkBuilding.E2E_Project.HomePageTestCases.checkTitleOfPageIsCorrect(HomePageTestCases.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,31 +51,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTitleOfPageIsCorrect -->
-        <test-method status="PASS" signature="checkHeaderTitleIsCorrect()[pri:2, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@68e965f5]" name="checkHeaderTitleIsCorrect" duration-ms="88" started-at="2021-06-28T13:12:02Z" finished-at="2021-06-28T13:12:02Z">
+        <test-method status="PASS" signature="checkHeaderTitleIsCorrect()[pri:2, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@7d20d0b]" name="checkHeaderTitleIsCorrect" duration-ms="163" started-at="2021-06-28T14:18:57Z" finished-at="2021-06-28T14:18:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHeaderTitleIsCorrect -->
-        <test-method status="PASS" signature="checkNavBarAvailable()[pri:3, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@68e965f5]" name="checkNavBarAvailable" duration-ms="333" started-at="2021-06-28T13:12:02Z" finished-at="2021-06-28T13:12:03Z">
+        <test-method status="PASS" signature="checkNavBarAvailable()[pri:3, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@7d20d0b]" name="checkNavBarAvailable" duration-ms="273" started-at="2021-06-28T14:18:57Z" finished-at="2021-06-28T14:18:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNavBarAvailable -->
-        <test-method status="PASS" signature="checkLoginBtnWorking()[pri:4, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@68e965f5]" name="checkLoginBtnWorking" duration-ms="4807" started-at="2021-06-28T13:12:03Z" finished-at="2021-06-28T13:12:07Z">
+        <test-method status="PASS" signature="checkLoginBtnWorking()[pri:4, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@7d20d0b]" name="checkLoginBtnWorking" duration-ms="1517" started-at="2021-06-28T14:18:57Z" finished-at="2021-06-28T14:18:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginBtnWorking -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@68e965f5]" name="closeBrowser" is-config="true" duration-ms="404" started-at="2021-06-28T13:12:07Z" finished-at="2021-06-28T13:12:08Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.HomePageTestCases@7d20d0b]" name="closeBrowser" is-config="true" duration-ms="624" started-at="2021-06-28T14:18:59Z" finished-at="2021-06-28T14:19:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- FrameworkBuilding.E2E_Project.HomePageTestCases -->
     </test> <!-- HomePageTestCases -->
-    <test name="LoginPageTestCases" duration-ms="47070" started-at="2021-06-28T07:41:24Z" finished-at="2021-06-28T07:42:11Z">
+    <test name="LoginPageTestCases" duration-ms="33496" started-at="2021-06-28T08:48:36Z" finished-at="2021-06-28T08:49:09Z">
       <class name="FrameworkBuilding.E2E_Project.LoginPageTestCases">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@55b53d44]" name="openBrowser" is-config="true" duration-ms="5693" started-at="2021-06-28T13:11:24Z" finished-at="2021-06-28T13:11:30Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@609cd4d8]" name="openBrowser" is-config="true" duration-ms="5099" started-at="2021-06-28T14:18:36Z" finished-at="2021-06-28T14:18:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="LoginPageUnautorizedAccessTest(java.lang.String, java.lang.String)[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@55b53d44]" name="LoginPageUnautorizedAccessTest" duration-ms="29797" started-at="2021-06-28T13:11:30Z" data-provider="getData" finished-at="2021-06-28T13:11:59Z">
+        <test-method status="PASS" signature="LoginPageUnautorizedAccessTest(java.lang.String, java.lang.String)[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@609cd4d8]" name="LoginPageUnautorizedAccessTest" duration-ms="18979" started-at="2021-06-28T14:18:41Z" data-provider="getData" finished-at="2021-06-28T14:19:00Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageUnautorizedAccessTest -->
-        <test-method status="PASS" signature="LoginPageUnautorizedAccessTest(java.lang.String, java.lang.String)[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@55b53d44]" name="LoginPageUnautorizedAccessTest" duration-ms="11264" started-at="2021-06-28T13:12:00Z" data-provider="getData" finished-at="2021-06-28T13:12:11Z">
+        <test-method status="PASS" signature="LoginPageUnautorizedAccessTest(java.lang.String, java.lang.String)[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@609cd4d8]" name="LoginPageUnautorizedAccessTest" duration-ms="9199" started-at="2021-06-28T14:19:00Z" data-provider="getData" finished-at="2021-06-28T14:19:09Z">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageUnautorizedAccessTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@55b53d44]" name="closeBrowser" is-config="true" duration-ms="253" started-at="2021-06-28T13:12:11Z" finished-at="2021-06-28T13:12:11Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FrameworkBuilding.E2E_Project.LoginPageTestCases@609cd4d8]" name="closeBrowser" is-config="true" duration-ms="165" started-at="2021-06-28T14:19:09Z" finished-at="2021-06-28T14:19:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

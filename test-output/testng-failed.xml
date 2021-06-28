@@ -16,12 +16,6 @@
   </test> <!-- LoginPageTestCases -->
   <test name="HomePageTestCases(failed)" parallel="tests">
     <classes>
-      <class name="FrameworkBuilding.E2E_Project.LoginPageTestCases">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- FrameworkBuilding.E2E_Project.LoginPageTestCases -->
       <class name="FrameworkBuilding.E2E_Project.HomePageTestCases">
         <methods>
           <include name="checkTitleOfPageIsCorrect"/>
@@ -29,6 +23,12 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- FrameworkBuilding.E2E_Project.HomePageTestCases -->
+      <class name="FrameworkBuilding.E2E_Project.LoginPageTestCases">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- FrameworkBuilding.E2E_Project.LoginPageTestCases -->
     </classes>
   </test> <!-- HomePageTestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

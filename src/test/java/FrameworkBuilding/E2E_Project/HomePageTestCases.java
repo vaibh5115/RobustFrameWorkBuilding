@@ -8,11 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePageObjects;
-import pageObjects.LoginPageObjects;
 import resources1.base;
 
 public class HomePageTestCases extends base

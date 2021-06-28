@@ -10,8 +10,8 @@
   <!-- below block is for printing logs in PrintLogs.log file -->
   <RollingFile name="File" fileName="${basePath}/PrintLogs.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-     <SizeBasedTriggeringPolicy size="100 MB" />
-   </RollingFile>
+     <SizeBasedTriggeringPolicy size="100 MB"/>
+  </RollingFile>
   
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
